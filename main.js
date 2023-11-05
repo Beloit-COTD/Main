@@ -84,7 +84,7 @@ function createBarChart(data) {
         .attr("y", d => y(d.name))
         .attr("width", 0) // Start with zero width
         .attr("height", y.bandwidth())
-        .attr("fill", (d, i) => d.color) // Highlight the topmost bar
+        .attr("fill", d => d.color) // Highlight the topmost bar
 
     // Animate the bars on load
     bars.transition()

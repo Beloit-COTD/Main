@@ -174,7 +174,7 @@
                 var image = document.getElementById("color");
                 const prediction = await model.predict(image, false);
                 const color_assign = prediction.slice()
-                // prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+                prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
                 console.log(prediction[0].className);
                 var resultMessage;
                 var resultExpain;
@@ -233,7 +233,7 @@
                         break;
                     case "Mint":
                         resultMessage = "Mint"
-                        resultExplain = ""
+                        resultExplain = "Embrace the refreshing MINT as it merges with the tranquility of LIGHT GRAY. Feel the zest of YELLOW, like rays of sunshine breaking through, as you savor the invigorating qualities of MINT. Let the subtle sophistication of DARK GRAY enhance the coolness of MINT, adding depth and balance to your palette. MINT, with its soothing qualities, reminds us of nature's own oasis, where GREEN meets a touch of cool BLUE, creating a harmonious and calming blend."
                         break;
                     default:
                         resultMessage = "Can't Predict"
@@ -244,7 +244,7 @@
                 $('.result-message').html(title + explain)
                 const data = []
                 const color_list = ["red", "orange", "yellow", "green", "blue", "navy", "purple", "black", "white", "gray"
-                    , "pink", "mint", "skyblue", "brown"]
+                    , "pink", "aqua", "skyblue", "brown"]
                 for (let i = 0; i < maxPredictions; i++) {
                     const classPrediction =
                         prediction[i].className + ": " + (prediction[i].probability.toFixed(2) * 100) + ' %';
