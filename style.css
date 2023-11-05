@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Jua', sans-serif;
-    background-color: #d1a8e9;
+    background-color: rgb(76, 133, 212);
 }
 
 .title {
@@ -14,16 +14,23 @@ body {
     text-align: center;
 }
 
+.subtitle-1 {
+    font-family: 'Jua', sans-serif;
+    line-height: 1.53;
+    text-align: center;
+    color: #ffffff;
+}
+
 .subtitle {
     font-family: 'Jua', sans-serif;
     line-height: 1.53;
     text-align: center;
-    color: #35465d;
+    color: rgb(222, 219, 46);
     margin-bottom: 5%;
 }
 
 .file-upload {
-    background-color: #aa75c9;
+    background-color: #1f56b4;
     width: 600px;
     margin: 0 auto;
     padding: 20px;
@@ -47,13 +54,13 @@ body {
 }
 
 .image-upload-wrap {
-    border: 4px dashed #831fb2;
+    border: 4px dashed #3a36a6;
     position: relative;
 }
 
 .image-dropping,
 .image-upload-wrap:hover {
-    background-color: #d1a8e9;
+    background-color: rgb(76, 133, 212);
     border: 4px dashed #ffffff;
 }
 
@@ -85,7 +92,7 @@ body {
     font-family: 'Varela Round';
     font-size: 2rem;
     font-weight: bold;
-    color:rgb(54, 12, 45)
+    color: rgb(54, 12, 45)
 }
 
 .try-again-text-wrap {
@@ -217,4 +224,10 @@ body {
 
 .Brown-color-title {
     color: rgb(91, 50, 7);
+}
+
+/* styles_test3.css */
+.highlighted {
+    fill: cyan;
+    /* Change the fill color to highlight */
 }
